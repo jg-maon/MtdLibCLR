@@ -1,39 +1,57 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="ソース ファイル">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="ヘッダー ファイル">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
     <Filter Include="リソース ファイル">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="internal">
+      <UniqueIdentifier>{d39b337f-f299-445f-b070-0a01c3f9dd64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="internal\include">
+      <UniqueIdentifier>{0bda6f6f-450b-45c0-b153-ecc8e0d3575f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="internal\source">
+      <UniqueIdentifier>{29ee1a0a-0501-42f0-8f5f-a54992db48c8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MtdLibCLR.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="Stdafx.h">
-      <Filter>ヘッダー ファイル</Filter>
+      <Filter>include</Filter>
     </ClInclude>
     <ClInclude Include="resource.h">
-      <Filter>ヘッダー ファイル</Filter>
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="internal\include\MtdLibImpl.h">
+      <Filter>internal\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MtdLib.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="internal\include\StringUtil.h">
+      <Filter>internal\include</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MtdLibCLR.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
     <ClCompile Include="AssemblyInfo.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>source</Filter>
     </ClCompile>
     <ClCompile Include="Stdafx.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MtdLib.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="internal\source\MtdLibImpl.cpp">
+      <Filter>internal\source</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -48,5 +66,10 @@
     <Image Include="app.ico">
       <Filter>リソース ファイル</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="internal\include\StringUtil.inl">
+      <Filter>include</Filter>
+    </None>
   </ItemGroup>
 </Project>

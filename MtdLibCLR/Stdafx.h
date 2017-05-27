@@ -5,3 +5,6 @@
 #pragma once
 
 
+#ifndef SAFE_DELETE
+#define SAFE_DELETE(p) do { if (p) { delete p; p = nullptr; } } while (0)
+#endif

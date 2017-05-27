@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="ExtLibs">
+      <UniqueIdentifier>{dbcf9f03-8588-4c0d-8f03-164c73867515}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExtLibs\include">
+      <UniqueIdentifier>{d83297dc-3e03-4199-9c65-f1694853b583}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExtLibs\source">
+      <UniqueIdentifier>{40eb86fb-fbed-4901-b473-e10cb5f5bd9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExtLibs\include\MTD">
+      <UniqueIdentifier>{65c505c6-3dea-43c0-b6fe-d9a3b626d7e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExtLibs\source\MTD">
+      <UniqueIdentifier>{c3d1fa82-6f20-43c6-863f-7669103de0cd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\ExtLibs\source\MTD\MTDMaterialData.cpp">
+      <Filter>ExtLibs\source\MTD</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExtLibs\source\MTD\MTDParamAccessor.cpp">
+      <Filter>ExtLibs\source\MTD</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExtLibs\source\MTD\MTDTexmapAccessor.cpp">
+      <Filter>ExtLibs\source\MTD</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\MTDLibWrapper\MTDLibWrapper.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\MTDLibWrapper\stdafx.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\ExtLibs\include\DLVec.hpp">
+      <Filter>ExtLibs\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExtLibs\include\MTD\MTDParamAccessor.h">
+      <Filter>ExtLibs\include\MTD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExtLibs\include\MTD\MTDTexmapAccessor.h">
+      <Filter>ExtLibs\include\MTD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExtLibs\include\MTD\MTDMaterialData.h">
+      <Filter>ExtLibs\include\MTD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\MTDLibWrapper\MTDLibWrapper.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\MTDLibWrapper\stdafx.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
